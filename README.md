@@ -1,4 +1,5 @@
 <p>Project created following Kevin Powell's course on Scrimba. The website served as a study of good CSS design and practices, and also of responsive and accesible web development.</p>
+<p>The course can be accessed <a href="https://v2.scrimba.com/build-a-space-travel-website-c014">here.</a></p>
 
 <h1>Home Page</h1>
 <img src='https://github.com/user-attachments/assets/265adad2-aba6-4a70-ab17-4a1b61e2210a' />
