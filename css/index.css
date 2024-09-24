@@ -97,7 +97,6 @@ body {
 img,
 picture {
   max-width: 100%;
-  display: block;
 }
 
 /* make form elements easier to work with */
@@ -308,6 +307,32 @@ select {
   transform: scale(1.5);
 }
 
+.technology-tabs {
+  grid-area: tabs;
+  display: flex;
+  gap: 2rem;
+}
+
+.technology-tabs > button {
+  aspect-ratio: 1;
+  background-color: transparent;
+  font-size: 1.5rem;
+  width: 3rem;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+}
+
+.technology-tabs > button:hover {
+  cursor: pointer;
+}
+
+.technology-tabs button[aria-selected="true"] {
+  background-color: white;
+  color: hsl(230 35% 7%);
+}
+
 /* primary-header */
 
 .logo {
@@ -394,6 +419,17 @@ select {
   .primary-navigation {
     padding-inline: clamp(3rem, 7vw, 7rem);
   }
+
+  .technology-tabs > button {
+    display: grid;
+    align-items: center;
+    aspect-ratio: 1;
+    background-color: transparent;
+    font-size: 1.8rem;
+    width: 4rem;
+    border: 1.5px solid white;
+    border-radius: 50%;
+  }
 }
 
 @media (min-width: 35em) and (max-width: 44.999em) {
@@ -420,6 +456,15 @@ select {
 
   .primary-navigation {
     margin-block: 2rem;
+  }
+
+  .technology-tabs {
+    flex-direction: column;
+  }
+
+  .technology-tabs > button {
+    font-size: 2rem;
+    width: 4.5rem;
   }
 }
 

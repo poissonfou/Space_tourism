@@ -1,0 +1,88 @@
+.technology {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/technology/background-technology-mobile.jpg");
+}
+
+@media (min-width: 35rem) {
+  .technology {
+    background-position: center center;
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
+}
+
+@media (min-width: 45rem) {
+  .technology {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+  }
+}
+
+.grid-container {
+  /* outline: green solid 2px; */
+  display: grid;
+  text-align: center;
+  place-items: center;
+}
+
+.grid-container--technology {
+  gap: 2rem;
+  grid-template-areas:
+    "title"
+    "image"
+    "tabs"
+    "content";
+}
+
+.numbered-title {
+  grid-area: title;
+}
+
+.technology-info {
+  grid-area: content;
+  padding: 0em 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.technology-info h2 {
+  font-size: 2.5rem;
+}
+
+picture {
+  grid-area: image;
+  width: 100%;
+}
+
+picture > img {
+  width: 100%;
+}
+
+@media (min-width: 35rem) {
+  .numbered-title {
+    width: 80%;
+    text-align: left;
+  }
+}
+
+@media (min-width: 45rem) {
+  .grid-container--technology {
+    grid-template-areas:
+      "title title . "
+      "tabs content image";
+    padding-left: 4rem;
+    padding-bottom: 1rem;
+  }
+
+  .technology-info {
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  .technology-info > h2 {
+    font-size: 3.5rem;
+  }
+
+  .numbered-title {
+    width: 95%;
+    text-align: left;
+  }
+}

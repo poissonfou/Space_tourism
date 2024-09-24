@@ -1,4 +1,6 @@
 .destination {
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url("../assets/destination/background-destination-mobile.jpg");
 }
 
@@ -39,6 +41,7 @@
 .grid-container--destination > picture {
   grid-area: image;
   max-width: 60%;
+  align-self: start;
 }
 
 .grid-container--destination > .tab-list {
